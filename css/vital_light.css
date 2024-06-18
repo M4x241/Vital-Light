@@ -9,32 +9,38 @@ html{
     width: 100%;
     font-family: sans-serif;
     line-height: 1.5;
+    background-color: #fff5e0;
 }
 
 body{
     width: 100%;
 }
 
-a {
-    color: darkblue;
+h1, h2, h3, h4, h5, h6 {
+    font-family: lucida;
+}
+
+h2, h3 {
+    font-size: 30px;
+    color: #898C74;
+
+}
+
+h5 {
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 10px
+}
+
+.navbar a {
+    color: #898C74;
     background-color: transparent;
     transition: all 200ms;
 }
 
-a:hover {
-    color: gray;
-}
-
-a:not([href]):not([tabindex]) {
-    color: inherit;
-}
-
-a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
-    color: inherit;
-}
-
-a:not([href]):not([tabindex]):focus {
-    outline: 0;
+.navbar a:hover {
+    color: #BF5471;
 }
 
 .navbar {
@@ -50,6 +56,11 @@ a:not([href]):not([tabindex]):focus {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 13%;
+    background-color: #fff;
 }
 
 .navbar .nav-link {
@@ -68,6 +79,14 @@ a:not([href]):not([tabindex]):focus {
     position: relative;
 }
 
+.hero-txt h1 {
+    font-size: 70px;
+}
+
+.hero-txt p{
+    font-size: 25px;
+}
+
 .hero-img {
     width: 100%;
     position: relative;
@@ -81,4 +100,172 @@ a:not([href]):not([tabindex]):focus {
     width: 100%;
     text-align: center;
     color: #fff;
+}
+
+.recetas-contenedor {
+    padding: 3em;
+}
+
+.buscador {
+    position: absolute;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    padding: 1em;
+}
+
+.buscador > input {
+    outline: none;
+    box-sizing: border-box;
+    height: 2em; 
+    width: 0;
+    padding: 0 1.25rem; 
+    color: #000;
+    border-radius: 50px;
+    font-size: 1.25rem; 
+    border: 1px solid #898C74;
+    transition: all .7s ease;
+}
+
+::placeholder {
+    color: gray;
+}
+
+.search-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3.75rem; 
+    height: 3.75rem; 
+    background-color: #898C74;
+    line-height: 3.75rem; 
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.search-btn i {
+    font-size: 1.25rem;
+    color: #fff;
+    line-height: 3.75rem; 
+    transition: all .7s ease;
+}
+
+.buscador:hover input {
+    width: 21.875rem; 
+}
+
+.buscador:hover i {
+    transform: rotate(-360deg);
+}
+
+.recetas {
+    padding: 2em 0;
+}
+
+.tipos-recetas {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 0 3em;
+    gap: 1em;
+    align-items: center;
+}
+
+.tipos-recetas img {
+    width: 15em;
+    transition: all .7s ease;
+}
+
+.tipos-recetas a:hover img {
+    filter: brightness(0.6);
+}
+
+.recetas-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-contenedor{
+    display: flex;
+    flex-direction: column;
+    background-color: #898C74;
+    padding: 2em;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 50px;
+    width: 100%;
+}
+
+.footer img {
+    width: 20%;
+}
+
+.contact {
+    font-size: 20px;
+}
+
+.contact li, a {
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 25px;
+}
+
+.social li a{
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.social li a:hover {
+    color: #BF5471;
+}
+
+.calculadora {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculadora-contenedor {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 550px;
+    padding: 0;
+    gap: 1em;
+}
+
+.lista {
+    width: 50%;
+    height: 100%;
+}
+
+.resul-contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2em;
+    width: 50%;
+    height: 100%;
+    background-color: #F2C094;
+}
+
+.resultado {
+    background-color: #fff;
+    width: 10em;
+    height: 5em;
+    border-radius: 7%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
 }

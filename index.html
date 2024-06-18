@@ -4,46 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/vital_light.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>VITAL light</title>
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar navbar-collapse">
         <ul class="navbar-nav">
-            <li><a href="" class="nav-link">Home</a></li>
-            <li><a href="" class="nav-link">Calculadora</a></li>
-            <li><a href="" class="nav-link">Recetas</a></li>
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#recetas" class="nav-link">Recetas</a></li>
+            <li><a href="#calculadora" class="nav-link">Calculadora</a></li>
         </ul>
         <div>
-            <img src="assets\49bb1fa4f0278d7c61279da7773574a6.jpg" class="brand-img" alt="" width="150px">
+            <img src="assets/logo.png" class="brand-img" alt="" width="90px">
             <!--<span class="brand-txt">VITAL light</span> Para luego--> 
         </div>
         <ul class="navbar-nav">
-            <li><a href="html/login.html">Inicia sesión</a></li>
-            <li><a href="" class="nav-link">Contáctanos</a></li>
+            <li><a href="html/login.html" target="_blank">Inicia sesión</a></li>
+            <li><a href="#footer" class="nav-link">Contáctanos</a></li>
         </ul>
     </nav>
     <header class="hero">
-        <img src="assets/pompompurin.jpeg" class="hero-img" alt="">
+        <img src="assets/recetas-veganas1.jpg" class="hero-img" alt="">
         <div class="hero-txt">
             <h1>VITAL light</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dicta sit voluptate vel animi, praesentium ab nostrum aliquam nulla minima maiores error ducimus.</p>
+            <p>Tu camino hacia una alimentación balanceada comienza aquí.</p>
         </div>
     </header>
-    <div id="recetas">
-        <img src="assets/img3.png" alt="">
-        <div>
-            <h2>Conoce recetas</h2>
+    <div id="recetas" class="recetas">
+        <div class="recetas-contenedor">
+            <h2>Descubre algunas recetas</h2>
+            <div class="buscador">
+                <input type="text" placeholder="Busca recetas">
+                <div class="search-btn">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+        </div>
+        <div class="tipos-recetas">
+            <div class="recetas-btn">
+                <a href="html/recetas.html" target="_blank"><img src="assets/salados.jpg" alt=""></a>
+                <p>Salados</p>
+            </div>
+            <div class="recetas-btn">
+                <a href="html/recetas.html" target="_blank"><img src="assets/postres.jpg" alt=""></a>
+                <p>Postres</p>
+            </div>
+            <div class="recetas-btn">
+                <a href="html/recetas.html" target="_blank"><img src="assets/vegetariana.jpg" alt=""></a>
+                <p>Recetas vegetarianas</p>
+            </div>
+            <div class="recetas-btn">
+                <a href="html/recetas.html" target="_blank"><img src="assets/recetas-veganas.jpeg" alt=""></a>
+                <p>Recetas veganas</p>
+            </div>
+            <div class="recetas-btn">
+                <a href="html/recetas.html" target="_blank"><img src="assets/postre-vegano.jpg" alt=""></a>
+                <p>Dulces veganosy</p>
+            </div>
         </div>
     </div>
-    <div id="alimentos">
-        <h3>Conoce las calorias que consumes! :O</h3>
-        <a href="html/alimentos.html"></a>
-    </div>
-    <footer id="footer">
-        <div>Contactanos</div>
-        <div>
-            <img src="assets/49bb1fa4f0278d7c61279da7773574a6.jpg" alt="">
+    
+    <div id="calculadora" class="calculadora">
+        <h3>Conoce las calorias que consumes.</h3>
+        <div class="calculadora-contenedor">
+            <div class="lista">
+                <p>Selecciona los alimentos de tu receta.</p>
+            </div>
+            <div class="resul-contenedor">
+                <div class="cuadro">
+                    <p>Calorías</p>
+                    <div class="resultado">
+                        <p>Kcal</p>
+                    </div>
+                </div>
+                <div class="cuadro">
+                    <p>Proteínas</p>
+                    <div class="resultado">
+                        <p>g</p>
+                    </div>
+                </div>
+                <div class="cuadro">
+                    <p>Carbohidratos</p>
+                    <div class="resultado">
+                        <p>g</p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+    <footer id="footer" class="footer-contenedor">
+        <h5>Contáctanos</h5>
+            <div class="footer">
+                <img src="assets/logo.png" alt="">
+                <div>
+                    <h5>Contacto:</h5>
+                    <ul class="contact">
+                        <li><a href="">Vital.light123@gmail.com</a></li>
+                    </ul> 
+                </div>
+                <br>
+                <div>
+                    <h5>Síguenos!</h5>
+                    <ul class="social">
+                        <li><a class="fa fa-instagram" href="#"></a></li>
+                        <li><a class="fa fa-facebook" href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
     </footer>
 </body>
 </html>
